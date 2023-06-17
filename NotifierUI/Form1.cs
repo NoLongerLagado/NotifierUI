@@ -27,12 +27,12 @@ namespace NotifierUI
             this.Show();
         }
 
-        private void Form1_Move(object sender, EventArgs e)
+        public void Form1_Move(object sender, EventArgs e)
         {
-            if (this.WindowState == FormWindowState.Minimized)
+            if (this.WindowState == FormWindowState.Normal)
             {
                 this.Hide();
-                notifyIcon1.ShowBalloonTip(1000, "Notification!", "Your student just log in!", ToolTipIcon.Warning);
+                notifyIcon1.ShowBalloonTip(1000, "Notification!", "Your student just log in!", ToolTipIcon.Info);
             }
         }
     }
