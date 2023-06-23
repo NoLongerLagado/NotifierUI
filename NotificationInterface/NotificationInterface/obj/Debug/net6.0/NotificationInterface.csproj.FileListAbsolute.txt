@@ -13,3 +13,6 @@ C:\Users\mekai\source\repos\NotificationInterface\NotificationInterface\obj\Debu
 C:\Users\mekai\source\repos\NotificationInterface\NotificationInterface\obj\Debug\net6.0\NotificationInterface.pdb
 C:\Users\mekai\source\repos\NotificationInterface\NotificationInterface\obj\Debug\net6.0\NotificationInterface.genruntimeconfig.cache
 C:\Users\mekai\source\repos\NotificationInterface\NotificationInterface\obj\Debug\net6.0\ref\NotificationInterface.dll
+C:\Users\james\OneDrive\Documents\Notifierui\NotifierUI\NotificationInterface\NotificationInterface\obj\Debug\net6.0\NotificationInterface.dll
+C:\Users\james\OneDrive\Documents\Notifierui\NotifierUI\NotificationInterface\NotificationInterface\obj\Debug\net6.0\refint\NotificationInterface.dll
+C:\Users\james\OneDrive\Documents\Notifierui\NotifierUI\NotificationInterface\NotificationInterface\obj\Debug\net6.0\NotificationInterface.pdb

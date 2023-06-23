@@ -37,7 +37,7 @@ namespace NotificationInterface.BLL
             }
             else
             {
-                // Handle the case when the sender or receiver is not found
+                
                 
             }
         }

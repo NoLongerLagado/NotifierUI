@@ -16,23 +16,23 @@ namespace NotificationInterface.DLL
             {
                 _users = new List<User>
         {
-            new User { Id = 1, Name = "John" },
-            new User { Id = 2, Name = "Alice" },
-            new User { Id = 3, Name = "Bob" },
+            /*new User { Id = 1, Name = " laurence" },
+            new User { Id = 2, Name = "Nelson" },
+            new User { Id = 3, Name = "Mika" },*/
         };
             }
 
             public User GetUserByName(string name)
             {
-#pragma warning disable CS8603 // Possible null reference return.
+#pragma warning disable CS8603 
                 return _users.FirstOrDefault(u => u.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
-#pragma warning restore CS8603 // Possible null reference return.
+#pragma warning restore CS8603 
             }
         }
 
         public class NotificationRepository
         {
-            // Simulated notification data store
+          
             private List<Notification> _notifications;
 
             public NotificationRepository()
