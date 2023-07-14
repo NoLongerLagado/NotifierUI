@@ -56,7 +56,7 @@ namespace NotificationInterface.DLL
             public User senderName { get; set; }
             public User receiverName { get; set; }
             public string Content { get; set; }
-            public DateTime TimeCode { get; set; }
+            public DateTime DateTime { get; set; }
             public bool IsRead { get; set; }
 
         }

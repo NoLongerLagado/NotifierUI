@@ -26,7 +26,7 @@ namespace NotificationInterface.BLL
                     senderName = sender,
                     receiverName = receiver,
                     Content = content,
-                    TimeCode = DateTime.Now,
+                    DateTime = DateTime.Now,
                     IsRead = false
                 };
 
