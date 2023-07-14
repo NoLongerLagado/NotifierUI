@@ -1,56 +1,55 @@
 ﻿using NotificationInterface;
-using InMemoryNotifData;
 using System;
-using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
+using static NotificationInterface.DLL.InMemoryNotifData;
 
 namespace NotificationInterface.DLL
 {
     public class SqlNotif
     {
-        static string _connectionString;
-
-        _connectionString = "Data Source = localhost; Initial Catalog = notifdatabase; Integrated Security = True;";
+        private readonly string _connectionString;
 
         public SqlNotif(string connectionString)
         {
             _connectionString = connectionString;
         }
 
+        public object SqlNotificationType { get; private set; }
+
         public void ConnectAndListenForChanges()
         {
-            using (var connection = new SqlConnection(_connectionString))
+            using var connection = new SqlConnection(_connectionString);
+            connection.Open();
+
+            var command = new SqlCommand("SELECT StudentId, SenderName, ReceiverName, Content, TimeCode, IsRead FROM Notifications", connection);
+
+            var dependency = new SqlDependency(command);
+            /*dependency.OnChange += Dependency_OnChange;*/
+
+            using (var reader = command.ExecuteReader())
             {
-                connection.Open();
-
-                var command = new SqlCommand("SELECT * FROM Notifications", connection);
-                var dependency = new SqlDependency(command);
-                dependency.OnChange += Dependency_OnChange;
-
-                using (var reader = command.ExecuteReader())
+                while (reader.Read())
                 {
-                    while (reader.Read())
+                    var notification = new Notification
                     {
-                        var notification = new Notification
-                        {
-                            StudentId = (int)reader["StudentId"],
-                            senderName = UserRepository.GetUserByName(reader["SenderName"].ToString()),
-                            receiverName = UserRepository.GetUserByName(reader["ReceiverName"].ToString()),
-                            Content = reader["Content"].ToString(),
-                            TimeCode = (DateTime)reader["TimeCode"],
-                            IsRead = (bool)reader["IsRead"]
-                        };
+                        StudentId = reader.GetInt32(0),
+                        senderName = UserRepository.GetUserByName(reader.GetString(1)),
+                        receiverName = UserRepository.GetUserByName(reader.GetString(2)),
+                        Content = reader.GetString(3),
+                        TimeCode = reader.GetDateTime(4),
+                        IsRead = reader.GetBoolean(5)
+                    };
 
-                    }
+                   
                 }
             }
         }
 
-        private void Dependency_OnChange(object sender, SqlNotificationEventArgs e)
+        /*private void Dependency_OnChange(object sender, SqlNotificationEventArgs e)
         {
             if (e.Type == SqlNotificationType.Change)
             {
+                // Handle the change event
             }
 
             var dependency = (SqlDependency)sender;
@@ -58,7 +57,6 @@ namespace NotificationInterface.DLL
             dependency.OnChange += Dependency_OnChange;
 
             ConnectAndListenForChanges();
-        }
+        }*/
     }
 }
-
