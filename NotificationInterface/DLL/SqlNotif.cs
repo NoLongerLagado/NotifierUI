@@ -21,7 +21,7 @@ namespace NotificationInterface.DLL
             using var connection = new SqlConnection(_connectionString);
             connection.Open();
 
-            var command = new SqlCommand("SELECT StudentId, SenderName, ReceiverName, Content, TimeCode, IsRead FROM Notifications", connection);
+            var command = new SqlCommand("SELECT TOP (1000) [StudentId] ,[senderName] ,[receiverName] ,[Content] ,[DateTime] ,[IsRead] FROM [notifdatabase].[dbo].[tblNotification]", connection);
 
             var dependency = new SqlDependency(command);
             /*dependency.OnChange += Dependency_OnChange;*/
@@ -36,7 +36,7 @@ namespace NotificationInterface.DLL
                         senderName = UserRepository.GetUserByName(reader.GetString(1)),
                         receiverName = UserRepository.GetUserByName(reader.GetString(2)),
                         Content = reader.GetString(3),
-                        TimeCode = reader.GetDateTime(4),
+                        DateTime = reader.GetDateTime(4),
                         IsRead = reader.GetBoolean(5)
                     };
 
