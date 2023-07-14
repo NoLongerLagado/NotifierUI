@@ -16,9 +16,7 @@ namespace NotificationInterface.DLL
             {
                 _users = new List<User>
         {
-            /*new User { Id = 1, Name = " laurence" },
-            new User { Id = 2, Name = "Nelson" },
-            new User { Id = 3, Name = "Mika" },*/
+            
         };
             }
 
@@ -60,6 +58,7 @@ namespace NotificationInterface.DLL
             public string Content { get; set; }
             public DateTime TimeCode { get; set; }
             public bool IsRead { get; set; }
+
         }
     }
 }

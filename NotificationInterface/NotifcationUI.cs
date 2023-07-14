@@ -1,5 +1,7 @@
 ﻿using NotificationInterface.BLL;
 using System;
+using System.Configuration;
+using System.Linq;
 
 namespace InterfaceNotification
 {
@@ -8,7 +10,7 @@ namespace InterfaceNotification
     public class Program
     {
         private static NotificationManagement _notificationManagement;
-      static void 
+        private static string senderName, receiverName, content;
 
         static void Main()
         {
@@ -21,7 +23,7 @@ namespace InterfaceNotification
 
                 if (NotificationManagement.NotificationMarketPlace(GetUserByName))
                 {
-                    Console.WriteLine($"Date : {DateTime.Now();}";
+                    Console.WriteLine($"Date : {DateTime.Now}");
                     Console.WriteLine(receiverName);
                     Console.WriteLine("Enter notification content:");
                     string content = Console.ReadLine();
@@ -29,35 +31,35 @@ namespace InterfaceNotification
                 }
                 else if (NotificationManagement.ReactPost(GetUserByName))
                 {
-                    Console.WriteLine($"Date : {DateTime.Now}";
+                    Console.WriteLine($"Date : {DateTime.Now}");
                     Console.WriteLine(senderName);
                     Console.WriteLine("Enter notification content:");
                     string content = Console.ReadLine();
-                    Console.WriteLine(receiver);
+                    Console.WriteLine(receiverName);
                 }
                 else if (NotificationManagement.NewPost(GetUserByName))
                 {
-                    Console.WriteLine($"Date : {DateTime.Now}";
-                    Console.WriteLine(sender);
+                    Console.WriteLine($"Date : {DateTime.Now}");
+                    Console.WriteLine(senderName);
                     Console.WriteLine("Enter notification content:");
                     string content = Console.ReadLine();
-                    Console.WriteLine(receiver);
+                    Console.WriteLine(receiverName);
                 }
                 else if (NotificationManagement.SharePost(GetUserByName))
                 {
-                    Console.WriteLine($"Date : {DateTime.Now}";
-                    Console.WriteLine(sender);
+                    Console.WriteLine($"Date : {DateTime.Now}");
+                    Console.WriteLine(senderName);
                     Console.WriteLine("Enter notification content:");
                     string content = Console.ReadLine();
-                    Console.WriteLine(receiver);
+                    Console.WriteLine(receiverName);
                 }
                 else if (NotificationManagement.Attendance(GetUserByName))
                 {
-                    Console.WriteLine($"Date : {DateTime.Now}";
-                    Console.WriteLine(sender);
+                    Console.WriteLine($"Date : {DateTime.Now}");
+                    Console.WriteLine(senderName);
                     Console.WriteLine("Enter notification content:");
                     string content = Console.ReadLine();
-                    Console.WriteLine(receiver);
+                    Console.WriteLine(receiverName);
                 }
 
 
