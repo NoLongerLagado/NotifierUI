@@ -14,10 +14,18 @@ namespace NotificationInterface.DLL
             _connectionString = connectionString;
         }
 
-        public object SqlNotificationType { get; private set; }
+        public object SqlNotificationType { get; private set;}
+
+        
+
+
+
 
         public void ConnectAndListenForChanges()
         {
+
+            UserRepository userRepository = new UserRepository();
+
             using var connection = new SqlConnection(_connectionString);
             connection.Open();
 
@@ -33,8 +41,8 @@ namespace NotificationInterface.DLL
                     var notification = new Notification
                     {
                         StudentId = reader.GetInt32(0),
-                        senderName = UserRepository.GetUserByName(reader.GetString(1)),
-                        receiverName = UserRepository.GetUserByName(reader.GetString(2)),
+                        senderName = userRepository.GetUserByName(reader.GetString(1)),
+                        receiverName = userRepository.GetUserByName(reader.GetString(2)),
                         Content = reader.GetString(3),
                         DateTime = reader.GetDateTime(4),
                         IsRead = reader.GetBoolean(5)
