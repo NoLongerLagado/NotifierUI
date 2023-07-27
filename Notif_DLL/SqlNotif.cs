@@ -2,12 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Threading.Tasks;
 
 namespace Notif_DLL
 {
     public class SqlNotif
     {
-        static string connectionString = "Server=DESKTOP-1JJPA47\\SQLEXPRESS;Initial Catalog=notifdatabase;Integrated Security=True";
+        static string connectionString = "Server=DESKTOP-1JJPA47\\SQLEXPRESS;Initial Catalog=notifdatabase;Integrated Security=True;";
         static SqlConnection sqlConnection;
 
         public SqlNotif()
@@ -33,9 +34,9 @@ namespace Notif_DLL
                         senderName = userRepository.GetUserByName(reader.GetString(1)),
                         receiverName = userRepository.GetUserByName(reader.GetString(2)),
                         Content = reader.GetString(3),
-                        DateTime = DateTime.Now,
+                        DateModified = Convert.ToDateTime(reader["DateModified"]),
 
-                    });
+                });
                 }
 
                 sqlConnection.Close();
@@ -45,14 +46,14 @@ namespace Notif_DLL
 
             public void StoreNotifications(Notification storenotifications)
             {
-            var insertStatement = "INSERT INTO Notifications (StudentID, senderName, receiverName, Content, DateTime, IsRead) " +
+            var insertStatement = "INSERT INTO tblNotification (StudentID, senderName, receiverName, Content, DateTime, IsRead) " +
                       "VALUES (@StudentID, @senderName, @receiverName, @Content, @DateTime, @IsRead)";
             SqlCommand insertCommand = new SqlCommand(insertStatement, sqlConnection);
                 insertCommand.Parameters.AddWithValue("@StudentID", storenotifications.StudentID);
                 insertCommand.Parameters.AddWithValue("@senderName", storenotifications.senderName.Name);
                 insertCommand.Parameters.AddWithValue("@receiverName", storenotifications.receiverName.Name);
                 insertCommand.Parameters.AddWithValue("@Content", storenotifications.Content);
-                insertCommand.Parameters.AddWithValue("@DateTime", storenotifications.DateTime);
+                insertCommand.Parameters.AddWithValue("@DateTime", storenotifications.DateModified);
                 insertCommand.Parameters.AddWithValue("@IsRead", storenotifications.IsRead);
 
             sqlConnection.Open();

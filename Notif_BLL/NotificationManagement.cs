@@ -29,7 +29,7 @@ namespace Notif_BLL
                     senderName = sender,
                     receiverName = receiver,
                     Content = content,
-                    DateTime = DateTime.Now,
+                    DateModified = DateTime.Now,
                     IsRead = false
                 };
 

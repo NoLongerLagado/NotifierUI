@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_DLL\\Notif_DLL.csproj": {}
+    "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_DLL\\Notif_DLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_DLL\\Notif_DLL.csproj": {
+    "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_DLL\\Notif_DLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_DLL\\Notif_DLL.csproj",
+        "projectUniqueName": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_DLL\\Notif_DLL.csproj",
         "projectName": "Notif_DLL",
-        "projectPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_DLL\\Notif_DLL.csproj",
+        "projectPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_DLL\\Notif_DLL.csproj",
         "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_DLL\\obj\\",
+        "outputPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_DLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_Models\\Notif_Models.csproj": {
-                "projectPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_Models\\Notif_Models.csproj"
+              "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_Models\\Notif_Models.csproj": {
+                "projectPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_Models\\Notif_Models.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_Models\\Notif_Models.csproj": {
+    "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_Models\\Notif_Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_Models\\Notif_Models.csproj",
+        "projectUniqueName": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_Models\\Notif_Models.csproj",
         "projectName": "Notif_Models",
-        "projectPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_Models\\Notif_Models.csproj",
+        "projectPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_Models\\Notif_Models.csproj",
         "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_Models\\obj\\",
+        "outputPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -38,7 +38,7 @@ namespace Notif_DLL
                 senderName = sname, 
                 receiverName = rname,
                 Content = cnt,
-                DateTime = DateTime.Now,
+                DateModified = DateTime.Now,
                 StudentID = stuid
             });
 

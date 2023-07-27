@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HJiUSBISyT87251fpSh3z2qegb1/obhmBGhn8cDahJBglX2QheGWgGlTaLzbRpV4gYV2BjxO8u4eQymEMGNgDg==",
+  "dgSpecHash": "9n8Chrr9rPY2XXesVS7y00vqf6msahVUpLyQp6KQwoRAAjAj1kANgdVBbkpIWWPcjK2TwGkthTwkC3KM3qCPfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\NotificationInterface\\NotificationInterface.csproj",
+  "projectFilePath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\NotificationInterface\\NotificationInterface.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\james\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

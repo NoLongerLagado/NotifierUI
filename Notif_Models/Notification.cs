@@ -12,17 +12,17 @@ namespace Notif_Models
         public User senderName { get; set; }
         public User receiverName { get; set; }
         public string Content { get; set; }
-        public DateTime DateTime { get; set; }
+        public DateTime DateModified { get; set; }
         public bool IsRead { get; set; }
 
-        public Notification()
-        {
-            StudentID = string.Empty;
-            senderName = new User();
-            receiverName = new User();
-            Content = string.Empty;
-            DateTime = DateTime.Now;
-        }
+        //public Notification()
+        //{
+        //    StudentID = string.Empty;
+        //    senderName = new User();
+        //    receiverName = new User();
+        //    Content = string.Empty;
+        //    DateModified = DateTime.Now;
+        //}
 
         public List<Notification> sendNotif = new List<Notification>();
     }

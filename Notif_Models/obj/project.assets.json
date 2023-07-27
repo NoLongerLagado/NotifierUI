@@ -475,11 +475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_Models\\Notif_Models.csproj",
+      "projectUniqueName": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_Models\\Notif_Models.csproj",
       "projectName": "Notif_Models",
-      "projectPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_Models\\Notif_Models.csproj",
+      "projectPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_Models\\Notif_Models.csproj",
       "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\HindiNaHopelessNotification\\Notif_Models\\obj\\",
+      "outputPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
