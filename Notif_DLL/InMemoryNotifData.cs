@@ -20,15 +20,7 @@ namespace Notif_DLL
         }
         private List<Notification> sendNotif = new List<Notification>();
 
-        public List<Notification> GetNotifications()
-        {
-            SqlNotif sqlNotif = new SqlNotif();
-
-
-
-
-            return sqlNotif.GetSaveNotifications();
-        }
+    
 
         public void CreateNotificationPath(User sname, User rname, string cnt, string stuid)
 

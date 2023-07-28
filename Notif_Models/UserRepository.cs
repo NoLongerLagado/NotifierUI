@@ -20,9 +20,9 @@ namespace Notif_Models
 
         public User GetUserByName(string name)
         {
-#pragma warning disable CS8603
-            return _users.FirstOrDefault(u => u.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
-#pragma warning restore CS8603
+            #pragma warning disable CS8603
+                        return _users.FirstOrDefault(u => u.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+            #pragma warning restore CS8603
         }
        
 
