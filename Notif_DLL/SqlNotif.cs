@@ -62,6 +62,16 @@ namespace Notif_DLL
 
                 sqlConnection.Close();
             }
+        public void DeleteNotificationAndColumn(string studentId, string columnName)
+        {
+            var deleteStatement = $"UPDATE tblNotification SET {columnName} = NULL WHERE StudentID = @StudentID";
+            SqlCommand deleteCommand = new SqlCommand(deleteStatement, sqlConnection);
+            deleteCommand.Parameters.AddWithValue("@StudentID", studentId);
+
+            sqlConnection.Open();
+            deleteCommand.ExecuteNonQuery();
+            sqlConnection.Close();
         }
+    }
     
 }

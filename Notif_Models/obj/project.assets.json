@@ -470,19 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\james\\.nuget\\packages\\": {}
+    "C:\\Users\\hakori17\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_Models\\Notif_Models.csproj",
+      "projectUniqueName": "C:\\Users\\hakori17\\OneDrive\\Documents\\GitHub\\NotifierUI\\Notif_Models\\Notif_Models.csproj",
       "projectName": "Notif_Models",
-      "projectPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_Models\\Notif_Models.csproj",
-      "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\james\\OneDrive\\Documents\\web\\NotifierUI\\NotifierUI\\NotifierUI\\Notif_Models\\obj\\",
+      "projectPath": "C:\\Users\\hakori17\\OneDrive\\Documents\\GitHub\\NotifierUI\\Notif_Models\\Notif_Models.csproj",
+      "packagesPath": "C:\\Users\\hakori17\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hakori17\\OneDrive\\Documents\\GitHub\\NotifierUI\\Notif_Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hakori17\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -529,7 +529,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
