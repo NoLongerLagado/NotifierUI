@@ -20,7 +20,6 @@ namespace NotificationInterface
                 Console.WriteLine("Send the Notification ");
 
                 NotificationManagement notificationManagement = new NotificationManagement();
-                InMemoryNotifData inMemoryNotifData = new InMemoryNotifData();
 
             
                         Console.Write("Enter student ID: ");
